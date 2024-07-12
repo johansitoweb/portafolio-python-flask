@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Portafolio web Johansitoweb</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    </head>
+
+    <body>
+     
+<!--nabvar-->
+<section class="text_inicial"><br>
+    <h5 style="padding-left: 12px;">Johansitoweb</h5>
+</section>
+<br><br><br><br><br>
+
+<div class="profile espacios">
+    <img src="https://avatars.githubusercontent.com/u/147890607?s=96&v=4" alt="Foto de perfil" class="profile-img">
+    <div class="profile-name"><h4>Johan Antonio</h4>
+    <h6 class="text_red" style="font-size: 10px;">Johansitoweb</h6>
+    
+  </div>
+  <br><br>
+  <h6 class="text-white">Soy Johan antonio desarrollador de video juegos no-code desarrollador de aplicaciones hibridas y mutiplataforma y <stroung class="espe"> Esxpecialiazo en Desarrollo web frontend </stroung> Amo crear libros ❤ y explicar programacion </h6>
+<a href="">
+    <div class="o">
+        <h6>Mis libros</h6>
+        <p>Explora y lee los libros que e creado para ti con mucho ❤</p>
+    <div/>
+</a>
+
+
+
+
+
+        <!-- Bootstrap JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    </body>
+</html>
